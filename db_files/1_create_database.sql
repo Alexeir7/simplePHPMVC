@@ -5,7 +5,7 @@ CREATE TABLE `turihn`.`lugares` (
   `lugartitulo` VARCHAR(45) NULL,
   `lugardesc` VARCHAR(255) NULL,
   `lugarimgurl` VARCHAR(128) NULL,
-  `lugardesccrt` VARCHAR(45) NULL
+  `lugardesccrt` VARCHAR(45) NULL,
   PRIMARY KEY (`lugarId`));
 
   INSERT INTO `turihn`.`lugares` (`lugartitulo`, `lugardesc`, `lugarimgurl`, `lugardesccrt`) VALUES ('Titulo 1', 'Roca en el mar pacífico bonito', 'public/imgs/t1.jpg', 'Roca En Mar');
