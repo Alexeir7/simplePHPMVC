@@ -1,3 +1,9 @@
+
+
+
+
+
+/*
 body{
     font-family:'Roboto', sans-serif;
     font-size:16px;
@@ -93,4 +99,203 @@ pre{
 }
 .right{
     text-align: right;
+}
+*/
+
+@import url(menu.css);
+@import url(footer.css);
+@import url(programas.css);
+@import url(articulos.css);
+@import url(galeria.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  color: #2a2a2a;
+  background-color: white;
+}
+
+.contenedor{
+  width: 100%;
+}
+
+.slider{
+  margin-top: 250px;
+  padding: 0 15%;
+  position: relative;
+}
+
+.slider img{
+  width: 100%;
+}
+
+.bottonAtras, .bottonSiguiente{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.bottonAtras{
+  left: 5%;
+}
+
+.bottonSiguiente{
+  right: 5%;
+}
+
+.slider a{
+  font-size: 150%;
+}
+
+.radio {
+  padding: 5%;
+  text-align: center;
+}
+
+.radio img{
+  display: inline;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 60%;
+}
+
+@media(min-width:768px){
+
+
+  header h2{
+    padding: 0 28% 0 38%;
+  }
+
+  .primero{
+     padding-top: 90px;
+   }
+
+   .articulo .mis{
+     width:35%;
+     height:35%
+   }
+
+   .articulo .vis{
+     width:25%;
+     height:25%
+   }
+   .articulo .val{
+     width:70%;
+     height:70%
+   }
+
+   main .inscribete{
+     margin-left: 41%;
+   }
+}
+
+@media (min-width:1024px) {
+
+  header #logo{
+    width: 5%;
+    height: 5%;
+  }
+
+  header label{
+    display: none;
+  }
+  .primero{
+    padding-top: 80px;
+  }
+
+  .articulo{
+    padding: 30px 200px;
+  }
+
+  .articulo .mis{
+    width:20%;
+    height:20%
+  }
+
+  .articulo .vis{
+    width:15%;
+    height:15%
+  }
+
+  header #logo{
+    width: 3%;
+    height: 3%;
+  }
+
+  header h1{
+  }
+
+  header h2{
+    display: block;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+  .menu{
+    position: relative;
+    padding-left: 10%;
+    margin: 0;
+    opacity: 1;
+    max-width: 500%;
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    overflow:visible;
+  }
+
+  .menu li{
+      position: relative;
+  }
+
+  .menu li ul{
+      position: absolute;
+  }
+
+  .menu > ul > li > a{
+      color: #2a2a2a;
+  }
+
+  .menu>ul>li{
+    float: left;
+  }
+
+  .menu li li {
+    background: #4499fb;
+  }
+
+  .menu a:hover, .menu a:active{
+    background: rgba(#000000, 0.2);
+  }
+
+  .desplegable{
+    padding: 0;
+    color: white;
+  }
+
+  header label{
+    display: none;
+  }
+
+  .slider{
+    margin-top: 180px;
+  }
+
+  .slider img{
+    max-width: 960px;
+    max-height: 450px;
+    padding-left: 2%;
+  }
+
+  .radio img{
+    height: 40%;
+    width: 40%;
+  }
+
 }

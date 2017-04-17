@@ -1,0 +1,52 @@
+.galeriaImagenes{
+  margin-top: 225px;
+}
+
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+.galeria {
+    width: 100%;
+}
+
+@media (min-width: 768px){
+
+  .galeriaImagenes{
+    margin-top: 260px;
+  }
+
+  .galeria {
+    float: left;
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+  .galeriaImagenes{
+    margin-top: 180px;
+  }
+
+  .galeria {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
