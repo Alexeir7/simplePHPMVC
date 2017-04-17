@@ -21,25 +21,25 @@
               <label class="icon-menu" for="menu-bar"></label>
               <nav class="menu">
                 <ul>
-                  <li> <a href="index.html">Inicio</a></li>
-                  <li><a href="quienesSomos.html">Quienes somos</a></li>
+                  <li> <a href="index.php?page=home">Inicio</a></li>
+                  <li> <a href="index.php?page=quienesSomos">Quienes somos</a></li>
                   <li> <a href="#">Servicios</a>
                     <ul class="desplegable">
-                      <li><a href="presenciales.html">Presenciales</a></li>
-                      <li><a href="comunitarios.html">Comunitarios</a></li>
+                      <li><a href="index.php?page=presenciales">Presenciales</a></li>
+                      <li><a href="index.php?page=comunitarios">Comunitarios</a></li>
                     </ul>
                   </li>
                   <li> <a href="#">Programas</a>
                     <ul class="desplegable">
-                      <li><a href="voluntariados.html">Voluntariados</a></li>
-                      <li><a href="practicantes.html">Practicantes</a></li>
-                      <li><a href="becas.html">Becas</a></li>
-                      <li><a href="padrinazgos.html">Padrinazgos</a></li>
+                      <li><a href="index.php?page=voluntariados">Voluntariados</a></li>
+                      <li><a href="index.php?page=practicantes">Practicantes</a></li>
+                      <li><a href="index.php?page=becas">Becas</a></li>
+                      <li><a href="index.php?page=padrinazgos">Padrinazgos</a></li>
                     </ul>
                   </li>
-                  <li><a href="galeria.html">Galeria</a></li>
-                  <li> <a href="acercaDe.html">Acerca de</a></li>
-                  <li> <a href="donaciones.html">Donaciones</a></li>
+                  <li><a href="index.php?page=galeria">Galeria</a></li>
+                  <li> <a href="index.php?page=acercaDe">Acerca de</a></li>
+                  <li> <a href="index.php?page=donaciones">Donaciones</a></li>
                 </ul>
               </nav>
             </div>

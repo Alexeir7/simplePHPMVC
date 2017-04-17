@@ -8,7 +8,7 @@
 
   function run(){
     addCssRef("public/css/estilos.css");
-    renderizar("home",array());
+    renderizar("donaciones",array());
   }
 
 
