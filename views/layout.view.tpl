@@ -40,7 +40,7 @@
                   <li><a href="index.php?page=galeria">Galeria</a></li>
                   <li><a href="index.php?page=acercaDe">Acerca de</a></li>
                   <li><a href="index.php?page=donaciones">Donaciones</a></li>
-                  <li><a href="index.php?page=logIn">Inicio de Sesion</a></li>
+                  <li><a href="index.php?page=login">Inicio de Sesion</a></li>
                 </ul>
               </nav>
             </div>

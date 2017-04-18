@@ -64,8 +64,8 @@
         require_once("controllers/donaciones.control.php");
         break;
 
-      case "logIn":
-        require_once("controllers/logIn.control.php");
+      case "login":
+        require_once("controllers/login.control.php");
         break;
 
       case "registrate":

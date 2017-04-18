@@ -1,9 +1,11 @@
 <?php
     require_once("libs/dao.php");
-    /*
-    function obtenerTodosMensajes(){
-        $sqlstr = "Select * from mensajes;";
-        return obtenerRegistros($sqlstr);
+
+    function obtenerUsuarios(){
+      $usuarios = array();
+      $sqlSelect = "select * from usuarios;";
+      $usuarios = obtenerRegistros($sqlSelect);
+
+      return $usuarios;
     }
-    */
  ?>
