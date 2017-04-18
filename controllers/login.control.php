@@ -1,37 +1,29 @@
 <?php
-/* Home Controller
- * 2014-10-14
- * Created By OJBA
- * Last Modification 2014-10-14 20:04
- */
+
   require_once("libs/template_engine.php");
   require_once("models/usuarios.model.php");
-
   function run(){
-    addCssRef("public/css/estilos.css");
+    $arrayForLogin = array(
+      "usuarioCorreo" => "",
+      "usuarioClave" => "",
+      "returnurl" =>""
+    );
 
-    if(isset($_POST["btnLogin"])){
-
-      $usuarioCorreo = $_POST["usuarioCorreo"];
-      $usuarioClave = $_POST["usuarioClave"];
-
-      $usuario = obtenerUsuario($usuarioCorreo);
-
-      if ($usuario) {
-        if ($usuario["usuarioClave"] == $usuarioClave) {
-
-          header("location:index.php?page=galeria");
-        }
-        else {
-          echo "error";
-        }
+    if(isset($_POST["usuarioCorreo"])){
+      $errores = autenticarUsuario($_POST);
+      if(count($errores)){
+        $arrayForLogin["errores"] = $errores;
+      }else{
+        //$_SESSION["usuario_email"] = $_POST["usuario_email"];
+        $returnurl = (isset($_POST["returnurl"]))? (urldecode($_POST["returnurl"])||"index.php"):"index.php";
+        mw_setEstaLogueado($_POST["usuarioCorreo"],true);
+        redirectWithMessage("Credenciales Validas.",$returnurl);
       }
-
     }
-
-    renderizar("login",array());
-
+    $arrayForLogin["returnurl"] = (isset($_GET["returnUrl"]))?$_GET["returnUrl"]:"";
+    renderizar("login",$arrayForLogin);
   }
+
 
   run();
 ?>

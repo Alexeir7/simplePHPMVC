@@ -72,6 +72,10 @@
         require_once("controllers/registrate.control.php");
         break;
 
+      case "agendarCita":
+        require_once("controllers/agendarCita.control.php");
+        break;
+
       default:
         require_once("controllers/error.control.php");
 
