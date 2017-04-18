@@ -7,6 +7,8 @@
     <input type="text" name="apellido" placeholder="Apellido" id="apellido"><br>
     <label for="contraseña">Contraseña:</label><br>
     <input type="password" name="contraseña" placeholder="Contraseña" minlength=8 maxlength="20"><br>
+    <label for="contraseñaConf">Confirmar contraseña:</label><br>
+    <input type="password" name="contraseñaConf" placeholder="Confirmar contraseña" minlength=8 maxlength="20"><br>
     <label for="genero">Genero:</label><br>
     <input type="radio" name="genero" id="generom" value="M"/>
     <b>Masculino</b>
