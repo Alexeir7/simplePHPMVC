@@ -48,6 +48,7 @@
      //obtener los datos del usuario
      $usuarioCorreo = $arrUserData["usuarioCorreo"];
      $usuarioClave = $arrUserData["usuarioClave"];
+     $returnUrl = "";
 
      $sqlstr = "Select usuarioId, usuarioCorreo, usuarioNombre, usuarioApellido, genero, direccion, telefono, usuarioClave, usuarioEstado, usuarioFechaIngreso, intentos, codigoRol from usuarios where usuarioCorreo = '%s';";
      $sqlstr = sprintf($sqlstr , $usuarioCorreo);
@@ -61,6 +62,13 @@
                $sqlupdate = "update usuarios set intentos=0, usuarioUltimoLogin='%s' where usuarioId = %d;";
                $sqlupdate = sprintf($sqlupdate, date('Y-m-d H:i:s'), $usuario["usuarioId"]);
                ejecutarNonQuery($sqlupdate);
+               
+               if ($usuario["codigoRol"] == 1) {
+                  header("Location:index.php?page=listaCitas");
+               }
+               else {
+                 header("Location:index.php?page=agendarCita");
+               }
            }else{
                $arrErrores[] = "Credenciales no son Válidas.";
                //actualizar el registro para aumentar los fallos

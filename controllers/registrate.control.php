@@ -34,10 +34,9 @@
       $arrDatos["telefono"]=$_POST["telefono"];
       $arrDatos["usuarioClave"]=$_POST["usuarioClave"];
       $arrDatos["claveConf"]=$_POST["claveConf"];
-      registrarUsuario($arrDatos);\
+      registrarUsuario($arrDatos);
       redirectWithMessage("Se inserto","index.php?page=home");
     }
-
 
     renderizar("registrate",array());
   }

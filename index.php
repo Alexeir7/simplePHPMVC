@@ -76,6 +76,10 @@
         require_once("controllers/agendarCita.control.php");
         break;
 
+      case "listaCitas":
+        require_once("controllers/listacitas.control.php");
+        break;
+        
       default:
         require_once("controllers/error.control.php");
 
