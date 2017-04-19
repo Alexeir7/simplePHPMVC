@@ -18,4 +18,4 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
 }
 
-setTimeout(plusDivs,7000);
+setTimeout(plusDivs,5000);

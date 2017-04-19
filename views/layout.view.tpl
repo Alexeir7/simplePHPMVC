@@ -7,6 +7,7 @@
             <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" href="public/css/estilo.css" />
             <link rel="stylesheet" href="public/css/fontello.css" />
+            <link rel="icon" href="public/imgs/favicon.ico" type="image/x-icon" />
             {{foreach css_ref}}
                 <link rel="stylesheet" href="{{uri}}" />
             {{endfor css_ref}}
@@ -45,9 +46,9 @@
               </nav>
             </div>
           </header>
-          <div class="contenido">
+          <main class="articulos">
               {{{page_content}}}
-          </div>
+          </main>
           <footer>
             <div class="contenedor" >
               <p><b>Contactanos</b></p>
