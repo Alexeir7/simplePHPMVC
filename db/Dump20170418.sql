@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `dbnegocios` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `dbnegocios`;
 -- MySQL dump 10.13  Distrib 5.7.17, for Linux (x86_64)
 --
 -- Host: localhost    Database: dbnegocios
@@ -112,14 +110,14 @@ CREATE TABLE `usuarios` (
   `usuarioClave` varchar(45) CHARACTER SET latin1 NOT NULL,
   `usuarioEstado` char(3) CHARACTER SET latin1 NOT NULL DEFAULT 'ACT',
   `usuarioFechaIngreso` datetime NOT NULL,
-  `usuarioUltimoLogin` datetime NOT NULL,
+  `usuarioUltimoLogin` datetime DEFAULT NULL,
   `intentos` int(11) DEFAULT '0',
   `codigoRol` bigint(11) NOT NULL DEFAULT '2',
   PRIMARY KEY (`usuarioId`),
   UNIQUE KEY `usuarioCorreo_UNIQUE` (`usuarioCorreo`),
   KEY `fk_usuarios_roles1_idx` (`codigoRol`),
   CONSTRAINT `fk_usuarios_roles1` FOREIGN KEY (`codigoRol`) REFERENCES `roles` (`codigoRol`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,7 +126,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'admin@juana.edu','Percy','Rosales','M','Los Robles','91843001','soypercy','ACT','2017-04-18 10:49:44','2017-04-18 10:49:44',0,2);
+INSERT INTO `usuarios` VALUES (1,'admin@juana.edu','Percy','Rosales','M','Los Robles','91843001','1ed91297e92d739347e61cfaca712c49','ACT','2017-04-18 14:09:52','2017-04-18 10:49:44',0,2),(2,'ana@gmail.com','ana','lopez','F','ghs','54334567','1ed91297e92d739347e61cfaca712c49','ACT','2017-04-18 14:09:52','2017-04-18 15:36:24',1,2);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -141,4 +139,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-18 11:46:41
+-- Dump completed on 2017-04-19  7:40:56
