@@ -13,9 +13,8 @@
         $("#datepicker").datepicker({beforeShowDay: $.datepicker.noWeekends, minDate: '0', changeMonth: false, changeYear: false, stepMonths: 0});
       });
     </script>
-    <label for="dia">Seleccione una fecha: </label><br>
+    <label for="dia" >Seleccione una fecha: </label><br>
     <input type="text" name="dia" id="datepicker"><br><br>
-
 
     <label for="hora">Seleccione una hora para ser atendido: </label><br>
     <input type="radio" name="hora" value="1:00:00">1:00pm-1:50pm<br>

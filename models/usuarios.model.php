@@ -62,7 +62,7 @@
                $sqlupdate = "update usuarios set intentos=0, usuarioUltimoLogin='%s' where usuarioId = %d;";
                $sqlupdate = sprintf($sqlupdate, date('Y-m-d H:i:s'), $usuario["usuarioId"]);
                ejecutarNonQuery($sqlupdate);
-               
+
                if ($usuario["codigoRol"] == 1) {
                   header("Location:index.php?page=listaCitas");
                }

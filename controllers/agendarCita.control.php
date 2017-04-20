@@ -26,7 +26,7 @@
       $arrDatos["hora"] = $_POST["hora"];
       $arrDatos["fecha"]= $_POST["dia"];
       $arrDatos["fechaHora"]= $arrDatos["dia"] . $arrDatos["hora"];
-      $arrDatos["fechaHora"] = strtotime($arrDatos["fechaHora"]);
+      //$arrDatos["fechaHora"] = strtotime($arrDatos["fechaHora"]);
       $arrDatos["idtipoPrograma"]= $_SESSION["idtipoPrograma"];
       $boolean = registrarCita($arrDatos);
       if ($boolean>0) {

@@ -7,5 +7,6 @@
     <input type="password" name="usuarioClave" placeholder="Contraseña" required><br/><br>
     <input type="submit" name="btnLogin" class="btnLogin" value="Iniciar Sesión">
   </form>
+  <br>
   <b>¿No tienes cuenta? <a href="index.php?page=registrate">Registrate!</a></b>
 </div>
